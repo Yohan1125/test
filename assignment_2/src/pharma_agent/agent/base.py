@@ -106,7 +106,7 @@ class BaseAgent(abc.ABC):
                 )
 
         raise RuntimeError(
-            f"Agent did not produce a final answer within {self.max_iterations} iterations."
+            f"Agent did not produce a final answer within max_iterations={self.max_iterations}."
         )
 
     def _execute_tool(self, name: str, inputs: dict[str, Any]) -> ToolResult:
