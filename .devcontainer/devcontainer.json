@@ -1,18 +1,1 @@
-{
-  "name": "Claude Code Testing Environment",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "lts"
-    }
-  },
-  "postCreateCommand": "npm install -g @anthropic-ai/claude-code",
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "ms-python.python",
-        "vscjava.vscode-java-pack"
-      ]
-    }
-  }
-}
+
